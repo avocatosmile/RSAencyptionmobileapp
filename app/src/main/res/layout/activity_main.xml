@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imageFilterView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/icon21"
+            tools:layout_editor_absoluteY="-3dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="308dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="204dp"
+            android:text="Welcome Back!"
+            android:textSize="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.621"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageFilterView"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="389dp"
+            android:layout_height="24dp"
+            android:text="Username "
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="45dp" />
+
+        <EditText
+            android:id="@+id/Username"
+            android:layout_width="371dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/et_style"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="342dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="40dp"
+            android:text="password"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.289"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Username" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="371dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/et_style"
+            android:ems="10"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+        <Button
+            android:id="@+id/Login"
+            android:layout_width="306dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="28dp"
+            android:text="Login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Password" />
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="306dp"
+            android:layout_height="65dp"
+            android:text="Getting Started"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Login"
+            app:layout_constraintVertical_bias="0.26" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

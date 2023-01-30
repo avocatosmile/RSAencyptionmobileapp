@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CE5959"
+    android:orientation="vertical"
+    tools:context=".encrypt">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="398dp">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="266dp"
+            android:layout_height="57dp"
+            android:layout_marginEnd="104dp"
+            android:layout_marginBottom="8dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.324"
+            app:srcCompat="@drawable/icon21" />
+
+        <Button
+            android:id="@+id/bt_select"
+            android:layout_width="314dp"
+            android:layout_height="102dp"
+            android:drawableLeft="@drawable/ic_icons8_txt_80_2_"
+            android:text=" Upload File "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.652" />
+
+        <Button
+            android:id="@+id/filespage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="264dp"
+            android:text="files"
+            app:layout_constraintBottom_toTopOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/username"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/fileN"
+            android:layout_width="382dp"
+            android:layout_height="126dp"
+            android:layout_marginBottom="24dp"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/press"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/press"
+            android:layout_width="256dp"
+            android:layout_height="95dp"
+            android:layout_marginBottom="100dp"
+            android:text="Encrypt"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
